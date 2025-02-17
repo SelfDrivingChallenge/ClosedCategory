@@ -1,0 +1,5 @@
+{
+    "front": "/dev/v4l/by-path/pci-0000:00:0d.0-usb-0:3.1:1.0-video-index0",
+    "left": "/dev/v4l/by-path/pci-0000:00:14.0-usb-0:5.2:1.0-video-index0",
+    "right": "/dev/v4l/by-path/pci-0000:00:14.0-usb-0:5.3:1.0-video-index0"
+}
