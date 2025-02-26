@@ -1,0 +1,2 @@
+ACTION=="add", SUBSYSTEM=="tty", ATTRS{product}=="USBtin", SYMLINK:="TinCan", TAG+="systemd", ENV{SYSTEMD_WANTS}+="tinCan.service"
+ACTION=="remove", SUBSYSTEM=="tty", ATTRS{product}=="USBtin", TAG+="systemd"

@@ -1,0 +1,6 @@
+ACTION=="add", SUBSYSTEM=="usb", ENV{PRODUCT}=="45e/2dd/203", TAG+="systemd", ENV{SYSTEMD_WANTS}+="controller.service"
+ACTION=="remove", SUBSYSTEM=="usb", ENV{PRODUCT}=="45e/2dd/203", TAG+="systemd"
+ACTION=="add", SUBSYSTEM=="usb", ENV{PRODUCT}=="45e/b12/509", TAG+="systemd", ENV{SYSTEMD_WANTS}+="controller.service"
+ACTION=="remove", SUBSYSTEM=="usb", ENV{PRODUCT}=="45e/b12/509", TAG+="systemd"
+ACTION=="add", SUBSYSTEM=="input", ENV{ID_VENDOR_ID}=="045e", ENV{ID_MODEL_ID}=="0b12", TAG+="systemd", ENV{SYSTEMD_WANTS}+="controller.service"
+ACTION=="remove", SUBSYSTEM=="usb",  ENV{ID_VENDOR_ID}=="045e", ENV{ID_MODEL_ID}=="0b12", TAG+="systemd"

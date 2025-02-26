@@ -1,0 +1,14 @@
+[Unit]
+Description=XBOX controller service
+StopWhenUnneeded=true
+
+[Service]
+Type=simple
+User=root
+Group=root
+TimeoutStartSec=0
+ExecStart=/opt/controller.sh
+SyslogIdentifier=Controller
+
+[Install]
+WantedBy=
